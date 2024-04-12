@@ -8,11 +8,13 @@ int main() {
     double m = 0.0;
 
     scanf("%lf", &R);
-    
-    m = (double)P * (4. / 3.) * M_PI * (R * R * R);
-    m = round(m);
-
-    printf("%.0lf", m);
-
+    if (R < 0) {
+        printf("n/a");
+    }
+    else {    
+        m = (double)P * (4. / 3.) * M_PI * (R * R * R);
+        m = round(m);
+        printf("%.0lf", m);
+    }
     return 0;
 }
