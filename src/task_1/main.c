@@ -3,7 +3,6 @@
 
 int main() {
     int N = 0;
-    int err = 0;
     scanf("%d", &N);
     if (N < 0){
         printf("n/a");
@@ -56,5 +55,5 @@ int main() {
         free(B);
         free(C);
     }
-    return err;
+    return 0;
 }
